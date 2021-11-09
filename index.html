@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <title>RPS GAMES</title>
+</head>
+
+<body>
+    <h1 id="head-el">ROCK PAPER SCISSORS</h1>
+    <div id="all-main">
+        <div class="left-all-main">
+            PLAYER
+            <br>
+            <span class="instruction">SELECT ROCK, PAPER OR SCISSORS</span>
+            <div id="image-section">
+                <label for="Rock">
+                    <div class="rocks">
+                        <img src="rock_left.png" alt="ROCK">
+
+                    </div>
+                    <input type="radio" name="rps_game" value="Rock">
+
+                </label>
+
+                <label for="Paper">
+                    <div class="papers"> <img src="paper_left.png" alt="PAPER"></div>
+                    <input type="radio" name="rps_game" value="Paper" checked>
+
+                </label>
+
+                <label for="Scissors">
+                    <div class="scissors"> <img src="scissors_left.png" alt="SCISSORS"></div>
+                    <input type="radio" name="rps_game" value="Scissors">
+
+                </label>
+
+            </div>
+        </div>
+        <div id="center-count">SCORE <br> 0:0</div>
+        <div class="right-all-main">
+            COMPUTER <br>
+            <span class="instruction">COMPUTER WILL SELECT AUTOMATICALLY</span>
+            <div id="right-image-section">
+            </div>
+        </div>
+    </div>
+    <div id="play-btn-div">
+        <button id="play-btn" onclick="playgame();">PLAY</button>
+    </div>
+    <div id="newgame-btn-div">
+        <button id="newgame-btn" onclick="newgame();">NEW GAME</button>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
